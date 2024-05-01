@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- <div class="loader">
+    <img src="img/loading.gif" alt="Loading..." />
+  </div> -->
+    <section>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container">
+                <a class="navbar-brand " href="#">
+                    <img src="img/0039711_logo-blue.webp" style="width: 150px;">
+                    </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="wop" dir="rtl">
+                    <input type="text" name="text" class="input MJK" placeholder=" جستجو در گوشی شاپ..">
+                    </div>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4">
+                    <li class="nav-item">
+                      <a class="nav-link " style="    height: 58px;padding: 0;width: auto;line-height: 59px;" href="log in.html"> ورود/ثبت نام </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart2 m-2 primary" viewBox="0 0 16 16">
+                          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+     </nav>
+     <nav class="navbar DTU  fixed-top " dir="rtl">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="#"> ورود/ثبت نام 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box-arrow-left m-2 primary" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                              </svg>
+                        </a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="#"> سبد خرید 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart2 m-2 primary" viewBox="0 0 16 16">
+                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                              </svg>
+                        </a>
+                      </li>
+                  <li class="nav-item dropdown m-1">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      گوشی موبایل
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"> گوشی آیفون اپل</a></li>
+                      <li><a class="dropdown-item" href="#"> گوشی سامسونگ </a></li>
+                      <li><a class="dropdown-item" href="#"> گوشی شیائومی  </a></li>
+                      <li><a class="dropdown-item" href="#"> گوشی وان پلاس </a></li>
+                      <li><a class="dropdown-item" href="#"> گوشی اُرد  </a></li>
+                      <li><a class="dropdown-item" href="#">گوشی اُرد  </a></li>
+                      <li><a class="dropdown-item" href="#">  گوشی هانر </a></li>
+                    </ul>
+                  </li>
+                
+                <li class="nav-item dropdown m-1">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    لوازم جانبی
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> محافظ تمام صفحه</a></li>
+                    <li><a class="dropdown-item" href="#">کابل </a></li>
+                    <li><a class="dropdown-item" href="#">شارژر  </a></li>
+                    <li><a class="dropdown-item" href="#"> شارژر فندکی</a></li>
+                    <li><a class="dropdown-item" href="#">  پاوربانک  </a></li>
+                    <li><a class="dropdown-item" href="#"> تبلت  </a></li>
+                  </ul>
+                </li>
+              
+                  <li class="nav-item dropdown m-1">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ساعت و دستبند هوشمند
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"> Samsung  </a></li>
+                      <li><a class="dropdown-item" href="#">  Apple </a></li>
+                      <li><a class="dropdown-item" href="#">  Xiaomi </a></li>
+                      <li><a class="dropdown-item" href="#"> Haylou  </a></li>
+                      <li><a class="dropdown-item" href="#">  Mibro </a></li>
+                      <li><a class="dropdown-item" href="#"> Kieslect  </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown m-1">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        لپ تاپ و کامپیوتر                     </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"> Samsung  </a></li>
+                      <li><a class="dropdown-item" href="#">  Apple </a></li>
+                      <li><a class="dropdown-item" href="#">  Xiaomi </a></li>
+                      <li><a class="dropdown-item" href="#"> Haylou  </a></li>
+                      <li><a class="dropdown-item" href="#">  Mibro </a></li>
+                      <li><a class="dropdown-item" href="#"> Kieslect  </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item m-3">
+                    <a class="nav-link " aria-current="page" href="#"> هندزفری و اسپیکر </a>
+                  </li>
+                  <li class="nav-item m-3">
+                    <a class="nav-link " aria-current="page" href="#"> کنسول بازی</a>
+                  </li>
+                  <li class="nav-item m-3">
+                    <a class="nav-link " aria-current="page" href="#">  تبلت و کتابخوان </a>
+                  </li>
+                  <li class="nav-item m-3">
+                    <a class="nav-link " aria-current="page" href="#">خرید اقساطی گوشی      </a>
+                  </li>
+                  <li class="nav-item m-3">
+                    <a class="nav-link " aria-current="page" href="#">  مجله خبری  </a>
+                  </li>
+
+                </ul>
+                  <div class="wop d-flex mt-4" dir="rtl">
+                    <input type="text" name="text" class="input MJK" placeholder="جستجو در گوشی شاپ...">
+                    </div>
+               
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="bovdcer ">
+            <ul class="menu " style="position: absolute;border-bottom:1px solid #C7C8CC;display: flex!important;">
+                <li>
+                <a href="#">گوشی موبایل</a>
+                <ul class="submenu " style="z-index: 1;">
+                  <div class="row">
+                    <div class="col-lg-3">
+                    <li href="#" class="m-3 ">
+                       گوشی های موبایل
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-left  " viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                      
+                    </li>
+                  <br>
+                  <div class="qmm">
+                      <li href="#"> برندهای گوشی <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg></li>
+                     <br>
+                      <li href="#"><a href="#"> گوشی سامسونگ</a></li>
+                      <li href="#"><a href="#">  گوشی آیفون اپل</a></li>
+                      <li href="#"> <a href="#"> گوشی شیائومی</a></li>
+                      <li href="#"><a href="#"> گوشی وان پلاس</a></li>
+                      <br>
+                      <li href="#"> <a href="#">گوشی اُرد </a></li>
+                      <br>
+                      <li href="#"><a href="#">گوشی نوکیا </a></li>
+                      <br>
+                     <li href="#"> <a href="#">گوشی هانر </a></li>
+                    </div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="qmm">
+                       <li href="#">  گوشی بر اساس قیمت  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                       </svg></li>
+                      <br>
+                       <li href="#"><a href="#">گوشی‌ با قیمت تا 5 میلیون تومان  </a></li>
+                       <li href="#"><a href="#"> گوشی‌ با قیمت 5 تا 10 میلیون تومان   </a></li>
+                       <li href="#"> <a href="#">گوشی‌ با قیمت 10 تا 15 میلیون تومان  </a></li>
+                       <li href="#"><a href="#"> گوشی‌ با قیمت بیش از 15 میلیون تومان  </a></li>
+                    </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <br>
+                      <br>
+                      <br>
+                      
+                         <li href="#">  قطعات موبایل <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                         </svg></li>
+                        <br>
+                         <li href="#"><a href="#">  ال سی دی گوشی</a></li>
+                         <li href="#"><a href="#"> شاسی گوشی  </a></li>
+                         </div>
+                     
+                      <div class="col-lg-3 ghosh">
+                        <img src="img/0048398_موبایل.webp">
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li><a href="#"> لوازم جانبی</a>
+                  <ul class="submenu" style="z-index: 1;">
+                    <div class="row">
+                      <div class="col-lg-3">
+                      <li href="#" class="m-3 ">
+                         همه لوازم جانبی
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-left  " viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                      </a>  
+                      </li>
+                    <br>
+                    <div class="qmm1">
+                        <li href="#"> محافظ و قاب<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg></li>
+                       <br>
+                        <li href="#"><a href="#">  محافظ تمام صفحه</a></li>
+                        <br>
+                        <li href="#"><a href="#">    قاب پشتی</a></li>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <br>
+                      <br>
+                      <br>
+                      <div class="qmm1">
+                         <li href="#">  پاوربانک، شارژر و کابل  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                         </svg></li>
+                        <br>
+                         <li href="#"><a href="#">کابل اتصال </a></li>
+                         <br>
+                         <li href="#"><a href="#"> شارژر </a></li>
+                         <br>
+                         <li href="#"> <a href="#">  شارژر فندکی</a></li>
+                         <br>
+                         <li href="#"><a href="#">  پاوربانک </a></li>
+                      </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <br>
+                        <br>
+                        <br>
+                        
+                           <li href="#">  سایر<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                           </svg></li>
+                          <br>
+                           <li href="#"><a href="#">پایه نگهدارنده گوشی و تبلت</a></li>
+                           <li href="#"><a href="#"> تبدیل   </a></li>
+                           <li href="#"><a href="#">  دستگاه پروت  </a></li>
+                        </div>
+                        <div class="col-lg-3 ghosh">
+                          <img src="img/0039917_لوازم-جانبی.webp">
+                        </div>
+                      </div>
+                    </ul>
+                </li>
+                <li><a href="#"> ساعت و دستبند هوشمند</a>
+                  <ul class="submenu"style="z-index: 1;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      <li href="#" class="m-3 ">
+                        همه ساعت‌هاودستبند‌های هوشمند
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-left  " viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                      </li>
+                    <br>
+                    <div class="qmm">
+                        <li href="#"> برند <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg></li>
+                       <br>
+                        <li href="#"><a href="#"> Samsung </a></li>
+                        <br>
+                        <li href="#"><a href="#">   Apple</a></li>
+                        <br>
+                        <li href="#"> <a href="#"> Xiaomi </a></li>
+                        <br>
+                        <li href="#"><a href="#">  Haylou </a></li>
+                        <br>
+                        <li href="#"> <a href="#"> Mibro </a></li>
+                        <br>
+                        <li href="#"><a href="#">Kieslect  </a></li>
+                        <br>
+                       <li href="#"> <a href="#"> QCY  </a></li>
+                       </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    
+                         <li href="#"><a href="#">   لوازم جانبی مرتبط    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                         </svg></a></li>
+                        <br>
+                         <li href="#"><a href="#">   بند ساعت و دستبند هوشمند   </a></li>
+                         <li href="#"><a href="#">   محافظ نمایشگر ساعت و دستبند هوشمند  </a></li>
+                         </div>
+                      
+                        <div class="col-lg-3 ghosh">
+                          <img src="img/0037203_ساعت-هوشمند.webp">
+                        </div>
+                      </div>
+                    </ul>
+                </li>
+                <li><a href="#"> لپ تاپ و کامپیوتر</a>
+                  <ul class="submenu"style="z-index: 1;">
+                    <div class="row">
+                      <div class="col-lg-3">
+                      <li href="#" class="m-3 ">
+                        لپ تاپ و کامپیوتر
+    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-left  " viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                      </li>
+                    <br>
+                    <div class="qmm">
+                        <li href="#">لپ تاپ 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg></li>
+                       <br>
+                        <li href="#"><a href="#">    Apple</a></li>
+                        <br>
+                        <li href="#"><a href="#">  Microsoft Surface </a></li>
+                        <br>
+                        <li href="#"><a href="#">  Asus </a></li>
+                        <br>
+                        <li href="#"><a href="#">  Lenovo </a></li>
+                        <br>
+                        <li href="#"><a href="#">  Hp </a></li>
+                        </div>
+    
+                      </div>
+                      <div class="col-lg-3">
+                      <br>
+                      <br>
+                      <br>
+                      
+                         <li href="#">    تجهیزات جانبی کامپیوتر  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                         </svg></li>
+                        <br>
+                         <li href="#"><a href="#">مانیتور  </a></li>
+                         <br>
+                         <li href="#"><a href="#"> کیبورد </a></li>
+                         <br>
+                         <li href="#"> <a href="#">   تجهیزات حافظه </a></li>
+                         <br>
+                         <li href="#"><a href="#">فلش مموری</a></li>
+                      </div>
+                        <div class="col-lg-3 ghosh">
+                          <img src="img/0037204_لپتاپ.webp">
+                        </div>
+                      </div>
+                    </ul>
+                </li>
+                <li><a href="#">هندزفری و اسپیکر</a></li>
+                <li><a href="#">کنسول بازی</a></li>
+                <li><a href="#"> تبلت و کتابخوان </a></li>
+                <li><a href="#">خرید اقساطی گوشی </a></li>
+                <li><a href="#"> مجله خبری </a></li>
+    
+            </ul>
+            </div>
+ </div>
+</section>
+
+
+    <section>
+      <div class="container mt-5">
+        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/0048955_1224x400-7.jpeg.webp" class="d-block w-100" alt="..." style="border-radius: 20px;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/0047963_1224x400-1.jpeg.webp" class="d-block w-100" alt="..."style="border-radius: 20px;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/0048953_1224x400-8.jpeg (1).webp" class="d-block w-100" alt="..."style="border-radius: 20px;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/0049094_1224x400.jpeg.webp" class="d-block w-100" alt="..."style="border-radius: 20px;">
+            </div>
+            <div class="carousel-item">
+              <img src="img/0047959_1920x440-recovered.jpeg (1).webp" class="d-block w-100" alt="..."style="border-radius: 20px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section>
+      <div class="container mt-5 majmo" dir="rtl">
+        <div class="row g-5">
+        <div class="col-lg-3  col-md-6  simg  ">
+          <img   src="img/0046989_mobile.png.webp">
+          <h2> <a href="#">گوشی موبایل</a></h2>
+        
+        </div>
+        <div class="col-lg-3 col-md-6 simg ">
+          <img src="img/0046991_laptop.png.webp">
+         <h2><a href="#">لپ تاپ</a></h2> 
+        </div>
+        <div class="col-lg-3 col-md-6 simg">
+          <img src="img/0046995_airpod.png.webp">
+         <h2><a href="#">لوازم جانبی</a></h2> 
+        </div>
+        <div class="col-lg-3 col-md-6 simg ">
+          <img src="img/0046996_smartwatch.png.webp">
+          <h2><a href="#">ساعت هوشمند</a></h2>
+        </div>
+        </div>
+      </div>
+    </section>
+<section>
+  <div class="container mt-5 mb-5">
+    <div class="content-boxing   rounded-3"dir="rtl" style="background: #0046be; ">
+      <div class="row torw"> 
+        <div class="col-lg-3 col-md-6 ghj" >
+          <img src="img/talhfif-vije-3.webp" style="width:290px; height: 250px; margin-top: 50px;">
+          <button class="mt-3 btn-color" >مشاهده همه</button>
+          </div>
+          <div class="col-lg-3 col-md-6 p-3">
+            <div class="card d-flex align-items-center" style="width: 18rem; height: 28rem;">
+              <h5 class="card-title text-danger">تخفیف ویژه </h5>
+             <a href="index2.html"><img  style="width: 10rem; " src="img/0039133_گوشی-موبایل-40r-تی-سی-ال-5g-ظرفیت-128-گیگابایت-رم-4-گیگابایت_415.jpeg.webp"  ></a> 
+              <h5 class="card-title bg-secondary  rounded p-1 text-light">ارسال فوری</h5>
+              <div class="card-body">
+                <p class="card-text">   گوشی موبایل40R تی سی ال 5G - ظرفیت 128 گیگابایت - رم 4 گیگابایت</p>
+                <div class="card-footer ">
+                  <div class="row ">
+                    <div class="col d-flex justify-content-center">
+                  <h5 class="card-title text-primary">6,865,000تومان</h5>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;"> تومان7,049,000 </a>              
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center" ><a href="index2.html"><div class="btn btn-outline-danger" style="width: 100px;">خرید  </div></a></div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-6 p-3">
+            <div class="card d-flex align-items-center" style="width: 18rem; height: 28rem;">
+              <h5 class="card-title text-danger">تخفیف ویژه </h5>
+             <a href="#"><img  style="width: 10rem; "src="img/0045389_پاوربانک-5000-میلی-آمپر-ساعت-انکر-magnetic-battery-مدل-a1611_415.jpeg.webp"></a> 
+              <h5 class="card-title bg-secondary  rounded p-1 text-light">ارسال فوری</h5>
+              <div class="card-body">
+                <p class="card-text"> پاوربانک 5000 میلی آمپر ساعت انکر Magnetic Battery مدل A1611  </p> 
+                <div class="card-footer ">
+                  <div class="row ">
+                    <div class="col d-flex justify-content-center">
+                  <h5 class="card-title text-primary">1,464,000تومان</h5>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;"> 1,510,000 </a>              
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center" ><div class="btn btn-outline-danger" style="width: 100px;">خرید </div></div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-3 dele">
+            <div class="card d-flex align-items-center" style="width: 18rem; height: 28rem;">
+              <h5 class="card-title text-danger">تخفیف ویژه </h5>
+             <a href="#"><img  style="width: 10rem; "src="img/0047921_شارژر-دیواری-45-وات-سامسونگ-مدل-ep-ta845-به-همراه-کابل-تبدیل-usb-c_415.jpeg.webp" class="card-img-top" ></a> 
+              <h5 class="card-title bg-secondary  rounded p-1 text-light">ارسال فوری</h5>
+              <div class="card-body">
+                <p class="card-text">  شارژر دیواری 45 وات سامسونگ مدل EP-TA845 به همراه کابل تبدیل USB-C   </p>
+                <div class="card-footer ">
+                  <div class="row ">
+                    <div class="col d-flex justify-content-center">
+                  <h5 class="card-title text-primary">1,469,000تومان</h5>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <a href="#" class="card-link  fs-6" style=" color: #8ca0b2;text-decoration: line-through;"> 1,589,000 </a>              
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center" ><div class="btn btn-outline-danger" style="width: 100px;">خرید </div></div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+  </div>
+</section>
+<section >
+  <div class="container">
+  <div class="contu d-flex align-items-center mt-5">
+    <img  src="goshi/0033520_بنر-ارسال-فوری.png.webp" style="width: 100%;" >
+  </div>
+  </div>
+  
+</section>
+<section>
+  <div class="container mt-5 mb-5" dir="rtl">
+   <div class="row ">
+    <div class="col-lg-3 col-md-6 ">
+    <h4  >ساعت هوشمند</h4>
+    <div class="forw">
+      <h4><a href="#">مشاهده همه</a></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px;border: none;">
+        <div class="col picth">
+          <a href="#">    <img src="saat/0032410_ساعت-هوشمند-سامسونگ-گلکسی-واچ-5-44-میلیمتری_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4">ساعت هوشمند سامسونگ گلکسی واچ 5 44 میلی‌متری</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4"> 7,483,000تومان</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px;border: none;">
+        <div class="col picth">
+          <a href="#">  <img src="saat/0031774_ساعت-هوشمند-میبرو-مدل-lite_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4">ساعت هوشمند میبرو مدل Lite</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4">1,015,000تومان</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px;border: none;">
+        <div class="col picth">
+          <a href="#">  <img src="saat/0033637_ساعت-هوشمند-میبرو-مدل-x1_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4">ساعت هوشمند میبرو مدل X1</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4">1,179,000تومان</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px; border: none;">
+        <div class="col picth">
+          <a href="#">   <img src="saat/0035829_ساعت-هوشمند-سامسونگ-گلکسی-واچ-5-پرو_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4">ساعت هوشمند سامسونگ گلکسی واچ 5 پرو</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4"> تومان11,897,000</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section>
+  <div class="container mt-5 mb-5">
+    <div class="row g-5 wop">
+      <div class="col-lg-3 col-md-6 ">
+   <a href="#"> <img src="img/0036938_5.jpeg.webp" style="width:230px;"></a>
+  </div>
+  <div class="col-lg-3 col-md-6 ">
+    <a href="#"> <img src="img/0036939_5-10.jpeg.webp" style="width:230px;"></a>
+   </div>
+   <div class="col-lg-3 col-md-6 ">
+    <a href="#"> <img src="img/0036940_10-15.jpeg.webp" style="width: 230px;"></a>
+   </div>
+   <div class="col-lg-3 col-md-6 ">
+    <a href="#"> <img src="img/0036941_15-20.jpeg.webp" style="width:230px;"></a>
+   </div>
+  </div>
+  </div>
+</section>
+<section>
+  <div class="container mt-5" dir="rtl">
+    <div class="row ">
+      <div class="col-lg-3 col-md-6 ">
+      <h4  > گوشی پرچم‌دار</h4>
+      <div class="forw">
+        <h4><a href="#">مشاهده همه</a></h4>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px; border: none;">
+        <div class="col">
+          <a href="#"><img style="width: 200px;" src="goshi/0037814_گوشی-گلکسی-s23-ultra-سامسونگ-5g-حافظه-256-رم-12-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4">گوشی گلکسی S23 Ultra سامسونگ 5G حافظه 512 رم 12 گیگابایت</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4">55,649,000تومان</a>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px;border: none;">
+        <div class="col">
+          <a href="#"><img style="width: 200px;" src="goshi/0041706_گوشی-موبایل-اپل-آیفون-13-5g-ظرفیت-256-گیگابایت-رم-4-گیگابایت-دو-سیم-کارت-cha-نات-اکتیو_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4"> گوشی موبایل اپل آیفون 13 5G - ظرفیت 256 گیگابایت - رم 4 گیگابایت - دو سیم کارت - CH/A نات اکتیو</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4">47,199,000تومان</a>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px; border: none;">
+        <div class="col">
+          <a href="#"><img style="width: 200px;" src="goshi/0030036_گوشی-گلکسی-s22-سامسونگ-حافظه-256-رم-8-گیگابایت_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4">گوشی گلکسی S22 سامسونگ حافظه 256 رم 8 گیگابایت</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4"> 31,690,000تومان</a>
+        </div>
+      </div>
+     </div>
+     <div class="col-lg-3 col-md-6">
+      <div class="card d-flex align-items-center m-3  " style=" width: 100%; height: 450px;border: none;">
+        <div class="col">
+          <a href="#"><img style="width: 200px;" src="goshi/0041706_گوشی-موبایل-اپل-آیفون-13-5g-ظرفیت-256-گیگابایت-رم-4-گیگابایت-دو-سیم-کارت-cha-نات-اکتیو_415.jpeg.webp" class="card-img-top" alt="..." ></a>
+      </div>
+        <div class="card-body">
+          <h6 class="card-title mt-4">گوشی آیفون 13 اپل ظرفیت 128 رم 4 گیگابایت (CH/A نات اکتیو)</h6>
+        </div>
+        <h6 class="card-title d-inline fs-5  rounded p-1 text-light " style="background-color: #a09da1;">ارسال فوری</h6>
+        <div class="card-body" >
+          <a href="#" class="card-link fs-4"> 36,949,000تومان</a>
+        </div>
+      </div>
+     </div>
+     </div>
+    </div>
+    </div>
+  </div>
+ </section>
+ <section>
+  <div class="container mt-5">
+    <div class="row g-5">
+      <div class="col-lg-6 ">
+      <a href="#"><img src="goshi/0036918_بنر-سامسونگ.jpeg.webp" style="width: 100%;"></a>
+      </div>
+      <div class="col-lg-6 ">
+        <a href="#"> <img src="goshi/0036920_بنر-شیائومی.jpeg.webp" style="width: 100%;"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container mt-5" dir="rtl">
+    <div class="row ">
+     <div class="col-md-6 ">
+     <h4 class="fw-bold" >فروشگاه اینترنتی گوشی شاپ</h4>
+   </div>
+   </div>
+   <div class="border mt-3 mb-2"></div>
+   <div class="moty mt-5">
+   <p>
+    امروزه در مقایسه با گذشته، خرید گوشی موبایل به دلیل تنوع بسیار بالای گوشی‌های روز بازار و پیچیدگی و گستردگی مشخصات فنی گوشی‌ها، فرآیندی ساده و آسان نیست.
+جهت خرید گوشی موبایل به صورت نقدی یا اقساطی، شما می‌توانید به فروشگاه‌های حضوری گوشی موبایل یا نمایندگی فروش گوشی در سطح شهر خود مراجعه کنید، اما این موضوع به دلیل محدودیت های موجود در فروشگاه‌های حضوری گوشی، از جمله بالا بودن قیمت گوشی‌ها، تنوع کم گوشی‌های موجود و یا الزام به خرید لوازم جانبی گوشی به همراه گوشی توسط فروشندگان، باعث شده است خریداران بیشتری روزانه به سمت فروشگاه‌ اینترنتی گوشی موبایل مراجعه نمایند.
+   </p>
+  </div>
+  <div class="topu mt-3 mosha">
+  <a href="#"><h5>مشاهده بیشتر</h5></a>
+</div>
+</div>
+</section>
+
+<section>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <h4 class="fw-bold">webprog.io</h4>
+        <p>
+          با ارسال ایمیل خود، از تخفیفات و جدیدترین های گوشی شاپ باخبر شوید.
+        </p>
+        <form class="row g-3">
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">ارسال </button>
+          </div>
+          <div class="col-auto" dir="rtl">
+            <input type="email" class="form-control" id="inputPassword2" placeholder="ایمیل خود را وارد کنید..">
+          </div>
+        </form>     
+       </div>
+      <div class="col-lg-7 offset-md-1">
+        <div class="row g-5">
+        <div class="col-lg-4">
+      <h6 class="fw-bold footer-header w-60">گوشی شاپ  </h6>
+      <ul class="list-unstyled">
+        <li>
+          <a href="#" class="footer-link"> صفحه نخست</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">درباره گوشی شاپ</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">تماس با ما</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">مجله خبری</a>
+        </li>
+     
+      </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="fw-bold footer-header w-60">حساب کاربری</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="footer-link"> سبد خرید</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">علاقه مندی‌ها</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">کالاهای دیده شده</a>
+            </li>
+         
+          </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6 class="fw-bold footer-header w-60"> دسترسی سریع</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-link"> قیمت گوشی </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">قیمت گوشی سامسونگ</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">قیمت گوشی شیائومی</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link"> مقایسه گوشی </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">خرید اقساطی گوشی</a>
+                </li>
+              </ul>
+                </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+crossorigin="anonymous"
+></script>
+<script src="script.js"></script>
+</body>
+</html>
